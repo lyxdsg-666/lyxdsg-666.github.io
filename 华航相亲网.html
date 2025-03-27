@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>华航相亲网</title>
+        <style>
+            body {
+                background-image: url("images/华航相亲网背景.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                h1 {
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(221, 221, 221, 0.8);
+        }
+
+        th {
+            background-color: rgba(242, 242, 242, 0.8);
+        }
+
+        tr:hover {
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            }
+    </style>
+        <style>
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+          <h1>华航相亲成员</h1>
+
+          <table>
+            <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>照片</th>
+            <th>微信号</th>
+            <th>联系方式</th>
+            </tr>
+
+            <tr>
+                <td>李佳帅</td>
+                <td>19</td>
+                <th>男</th>
+                <th><img src="images/李佳帅.jpg" alt="图片"></th>
+                <th>msd488084856</th>
+                <th>15128996166</th>
+            </tr>
+
+            <tr>
+                <td>赵子玮</td>
+                <td>21</td>
+                <th>男</th>
+                <th><img src="images/赵子玮.jpg" alt="图片"></th>
+                <th>zzw15128996127</th>
+                <th>15128996127</th>
+            </tr>
+            <tr>
+                <td>李晓壮</td>
+                <td>18</td>
+                <th>男</th>
+                <th><img src="images/李晓壮.jpg" alt="图片"></th>
+                <th>L705702</th>
+                <th>15533105935</th>
+            </tr>
+        </table>
+         <form>
+            <p>
+                <label>姓名：</label><input type="text">
+            </p>
+
+            <p>
+                <label>密码：</label><input type="password">
+            </p>
+
+            <p>
+                <label>性别：</label>
+                <input type="radio"> 男
+                <input type="radio"> 女
+            </p>
+
+            <p>
+                <label>个人描述：</label>
+                <textarea></textarea>
+            </p>
+
+            <p>
+                <label>选择您的相亲对象：</label>
+                <select>
+                    <option>李佳帅</option>
+                    <option>赵子玮</option>
+                    <option>李晓壮</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="button" value="点击获取联系方式">
+                <input type="reset" value="重置">
+            </p>
+        </form>
+        <script>
+        function redirectToContactPage() {
+            // 这里修改为你要跳转的页面 URL
+            window.location.href = 'contact_info.html';
+        }
+    </script>
+
+    </body>
+</html>
